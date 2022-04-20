@@ -19,8 +19,8 @@ server:
     accounts.alice: apiKey, login
     url: http://localhost:30080
 
-    # repositories: |
-    #   - url: https://github.com/DACHANCHOI/devops_k8s.git
+    repositories: |
+      - url: https://github.com/DACHANCHOI/k8-cicd-argocd.git
 
 
     # dex.config: |

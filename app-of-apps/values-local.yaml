@@ -1,4 +1,4 @@
-repoURL: 'https://github.com/dev-chulbuji/devops_k8s.git'
+repoURL: 'https://github.com/DACHANCHOI/k8-cicd-argocd.git'
 apps:
   - name: sample-helm-1
     project: dev

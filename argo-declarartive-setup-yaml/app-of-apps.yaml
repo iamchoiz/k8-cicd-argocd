@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-of-apps
+  namespace: argo
+spec:
+  destination:
+    namespace: default
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    repoURL: https://github.com/DACHANCHOI/k8-cicd-argocd.git
+    targetRevision: HEAD
+    path: app-of-apps
+    helm:
+      valueFiles:
+        - values-local.yaml
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+      - Validate=false
+      - CreateNamespace=true
+      - PrunePropagationPolicy=background

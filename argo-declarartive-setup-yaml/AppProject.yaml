@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: dev-test
+  name: dev
   namespace: argo
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  description: dev-test Project
+  description: dev Project
   sourceRepos:
   - '*'
 

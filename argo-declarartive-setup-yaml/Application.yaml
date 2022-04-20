@@ -6,9 +6,9 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: dev-test
+  project: dev
   source:
-    repoURL: https://github.com/dev-chulbuji/devops_k8s.git
+    repoURL: https://github.com/DACHANCHOI/k8-cicd-argocd.git
     targetRevision: HEAD
     path: sample-yaml
 

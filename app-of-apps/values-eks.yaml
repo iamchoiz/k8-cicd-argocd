@@ -1,0 +1,42 @@
+repoURL: 'https://github.com/dev-chulbuji/devops_k8s.git'
+apps:
+  - name: demo
+    project: default
+    namespace: default
+    source:
+      path: demo
+      customValues: true
+      values:
+        - values-eks.yaml
+  - name: prometheus
+    project: default
+    namespace: prom
+    source:
+      path: prometheus
+      customValues: true
+      values:
+        - values-eks.yaml
+  - name: grafana
+    project: default
+    namespace: grafana
+    source:
+      path: grafana
+      customValues: true
+      values:
+        - values-eks.yaml
+  - name: fluentbit
+    project: default
+    namespace: fluentbit
+    source:
+      path: fluent-bit
+      customValues: true
+      values:
+        - values-eks.yaml
+  - name: aws-cli-batch
+    project: default
+    namespace: default
+    source:
+      path: aws-cli
+      customValues: true
+      values:
+        - values-eks.yaml

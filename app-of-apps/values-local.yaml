@@ -1,0 +1,57 @@
+repoURL: 'https://github.com/dev-chulbuji/devops_k8s.git'
+apps:
+  - name: sample-helm-1
+    project: dev
+    namespace: default
+    source:
+      path: sample-helm-1
+  - name: sample-helm-2
+    project: dev
+    namespace: default
+    source:
+      path: sample-helm-2
+  # - name: prometheus-operator
+  #   project: dev
+  #   namespace: prom
+  #   source:
+  #     path: kube-prometheus-stack
+  #     customValues: true
+  #     values:
+  #       - values-local.yaml
+  # - name: prometheus
+  #   project: dev
+  #   namespace: prom
+  #   source:
+  #     path: prometheus
+  #     customValues: true
+  #     values:
+  #       - values-local.yaml
+  # - name: grafana
+  #   project: dev
+  #   namespace: grafana
+  #   source:
+  #     path: grafana
+  #     customValues: true
+  #     values:
+  #       - values-local.yaml
+  # - name: logstash
+  #   project: default
+  #   namespace: elastic
+  #   source:
+  #     path: logstash
+  #     customValues: true
+  #     values:
+  #       - values-local.yaml
+  # - name: filebeat
+  #   project: default
+  #   namespace: elastic
+  #   source:
+  #     path: filebeat
+  #     customValues: true
+  #     values:
+  #       - values-local.yaml
+  # - name: demo
+  #   project: dev
+  #   namespace: default
+  #   source:
+  #     path: demo

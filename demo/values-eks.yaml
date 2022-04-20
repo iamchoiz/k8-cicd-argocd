@@ -1,0 +1,18 @@
+replicas: 1
+image:
+  repository: 552661052297.dkr.ecr.ap-northeast-2.amazonaws.com/demo
+  tag: 1.2.6
+  imagePullSecrets:
+    - name: ecr-cred
+service:
+  type: NodePort
+  protocol: TCP
+  targetPort: 8080
+  port: 8080
+  nodePort: 31080
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/tags: Environment=prod,Name=demo-alb

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-yaml
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: sample-yaml
+  template:
+    metadata:
+      labels:
+        run: sample-yaml
+    spec:
+      containers:
+      - image: nginx
+        name: sample-yaml
+        ports:
+        - containerPort: 80

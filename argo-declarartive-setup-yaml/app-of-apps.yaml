@@ -16,8 +16,8 @@ spec:
       valueFiles:
         - values-local.yaml
   syncPolicy:
-    automated:
-      prune: false
+    # automated:
+    #   prune: false
     syncOptions:
       - Validate=false
       - CreateNamespace=true

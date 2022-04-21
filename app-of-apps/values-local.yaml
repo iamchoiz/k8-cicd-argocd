@@ -10,6 +10,12 @@ apps:
     namespace: default
     source:
       path: sample-helm-2
+  - name: demo
+    project: dev
+    namespace: default
+    source:
+      path: demo
+
   # - name: prometheus-operator
   #   project: dev
   #   namespace: prom

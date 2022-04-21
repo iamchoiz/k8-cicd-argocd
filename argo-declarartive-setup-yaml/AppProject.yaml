@@ -11,19 +11,12 @@ spec:
   - '*'
 
   destinations:
-  - namespace: default
+  - namespace: '*'
     server: https://kubernetes.default.svc
 
   clusterResourceWhitelist:
-  - group: ''
-    kind: Namespace
+  - group: '*'
+    kind: '*'
 
-  namespaceResourceBlacklist:
-  - group: ''
-    kind: ResourceQuota
-  - group: ''
-    kind: LimitRange
-  - group: ''
-    kind: NetworkPolicy
 
 ## https://argo-cd.readthedocs.io/en/stable/operator-manual/project.yaml 전체 옵션 확인

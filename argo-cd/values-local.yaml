@@ -17,7 +17,7 @@ server:
     - --insecure
   config:
     accounts.alice: apiKey, login
-    url: http://localhost:30080
+    url: http://127.0.0.1:30080
 
     repositories: |
       - url: https://github.com/DACHANCHOI/k8-cicd-argocd.git
@@ -28,7 +28,7 @@ server:
           name: GitHub
           config:
             clientID: cc77c6218f2755bdb6ac
-            clientSecret: ea4628a680377b4f652e75457c24fa3ee3b93673
+            clientSecret: 8e682aafd4daa6f8e8c24bc018e00d10fe43437b
             orgs:
             - name: devops-argocd
 

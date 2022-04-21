@@ -41,12 +41,8 @@ server:
       p, role:org-devops, applications, *, */*, allow
       p, role:org-devops, clusters, *, *, allow
       p, role:org-devops, repositories, *, *, allow
-      g, xxx:devops, role:org-devops
+      g, devops-argocd:devops, role:org-devops
 
-      p, role:org-backend, applications, get, */*, allow
-      p, role:org-backend, clusters, get, *, allow
-      p, role:org-backend, repositories, get, *, allow
-      g, xxx:backend, role:org-backend
 
 redis:
   enabled: true

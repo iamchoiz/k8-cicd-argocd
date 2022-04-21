@@ -21,34 +21,32 @@ server:
 
     repositories: |
       - url: https://github.com/DACHANCHOI/k8-cicd-argocd.git
+    dex.config: |
+      connectors:
+        - type: github
+          id: github
+          name: GitHub
+          config:
+            clientID: cc77c6218f2755bdb6ac
+            clientSecret: ea4628a680377b4f652e75457c24fa3ee3b93673
+            orgs:
+            - name: devops-argocd
 
+  rbacConfig:
+    policy.default: role:readonly
+    policy.csv: |
+      p, role:local-user-admin, applications, *, */*, allow
+      g, alice, role:local-user-admin
 
-    # dex.config: |
-    #   connectors:
-    #     - type: github
-    #       id: github
-    #       name: GitHub
-    #       config:
-    #         clientID: xxx
-    #         clientSecret: xxx
-    #         orgs:
-    #         - name: xxx
+      p, role:org-devops, applications, *, */*, allow
+      p, role:org-devops, clusters, *, *, allow
+      p, role:org-devops, repositories, *, *, allow
+      g, xxx:devops, role:org-devops
 
-  # rbacConfig:
-  #   policy.default: role:readonly
-  #   policy.csv: |
-  #     p, role:local-user-admin, applications, *, */*, allow
-  #     g, alice, role:local-user-admin
-
-  #     p, role:org-devops, applications, *, */*, allow
-  #     p, role:org-devops, clusters, *, *, allow
-  #     p, role:org-devops, repositories, *, *, allow
-  #     g, xxx:devops, role:org-devops
-
-  #     p, role:org-backend, applications, get, */*, allow
-  #     p, role:org-backend, clusters, get, *, allow
-  #     p, role:org-backend, repositories, get, *, allow
-  #     g, xxx:backend, role:org-backend
+      p, role:org-backend, applications, get, */*, allow
+      p, role:org-backend, clusters, get, *, allow
+      p, role:org-backend, repositories, get, *, allow
+      g, xxx:backend, role:org-backend
 
 redis:
   enabled: true

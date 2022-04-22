@@ -16,16 +16,14 @@ server:
     annotations:
       kubernetes.io/ingress.class: alb
       alb.ingress.kubernetes.io/scheme: internet-facing
-      alb.ingress.kubernetes.io/tags: Environment=prod,Name=argocd-alb
+      alb.ingress.kubernetes.io/tags: Environment=dev,Name=argocd-alb
   extraArgs:
     - --insecure
   config:
 #    url: http://127.0.0.1:30080
     accounts.admin: apiKey, login
     repositories: |
-      - url: https://github.com/dev-chulbuji/devops_k8s.git
-      - url: https://github.com/dev-chulbuji/devops_sample_app_python.git
-
+      - url: https://github.com/DACHANCHOI/k8-cicd-argocd.git
 #    dex.config: |
 #      connectors:
 #        - type: github

@@ -1,15 +1,5 @@
 repoURL: 'https://github.com/DACHANCHOI/k8-cicd-argocd.git'
 apps:
-  - name: sample-helm-1
-    project: dev
-    namespace: default
-    source:
-      path: sample-helm-1
-  - name: sample-helm-2
-    project: dev
-    namespace: default
-    source:
-      path: sample-helm-2
   - name: demo
     project: dev
     namespace: default

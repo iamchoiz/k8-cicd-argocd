@@ -21,16 +21,16 @@ server:
 
     repositories: |
       - url: https://github.com/DACHANCHOI/k8-cicd-argocd.git
-    dex.config: |
-      connectors:
-        - type: github
-          id: github
-          name: GitHub
-          config:
-            clientID: cc77c6218f2755bdb6ac
-            clientSecret: 8e682aafd4daa6f8e8c24bc018e00d10fe43437b
-            orgs:
-            - name: devops-argocd
+    # dex.config: |
+    #   connectors:
+    #     - type: github
+    #       id: github
+    #       name: GitHub
+    #       config:
+    #         clientID: xxx
+    #         clientSecret: xxx
+    #         orgs:
+    #         - name: devops-argocd
 
   rbacConfig:
     policy.default: role:readonly

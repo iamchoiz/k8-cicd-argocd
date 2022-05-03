@@ -32,16 +32,16 @@ server:
     #         orgs:
     #         - name: devops-argocd
 
-  rbacConfig:
-    policy.default: role:readonly
-    policy.csv: |
-      p, role:local-user-admin, applications, *, */*, allow
-      g, alice, role:local-user-admin
+  # rbacConfig:
+  #   policy.default: role:readonly
+  #   policy.csv: |
+  #     p, role:local-user-admin, applications, *, */*, allow
+  #     g, alice, role:local-user-admin
 
-      p, role:org-devops, applications, *, */*, allow
-      p, role:org-devops, clusters, *, *, allow
-      p, role:org-devops, repositories, *, *, allow
-      g, devops-argocd:devops, role:org-devops
+  #     p, role:org-devops, applications, *, */*, allow
+  #     p, role:org-devops, clusters, *, *, allow
+  #     p, role:org-devops, repositories, *, *, allow
+  #     g, devops-argocd:devops, role:org-devops
 
 
 redis:

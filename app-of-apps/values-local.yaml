@@ -1,4 +1,4 @@
-repoURL: 'https://github.com/DACHANCHOI/k8-cicd-argocd.git'
+repoURL: 'https://github.com/iamchoiz/k8-cicd-argocd.git'
 apps:
   - name: demo
     project: dev

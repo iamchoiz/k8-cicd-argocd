@@ -20,7 +20,7 @@ server:
     url: http://127.0.0.1:30080
 
     repositories: |
-      - url: https://github.com/DACHANCHOI/k8-cicd-argocd.git
+      - url: https://github.com/iamchoiz/k8-cicd-argocd.git
     dex.config: |
       connectors:
         - type: github

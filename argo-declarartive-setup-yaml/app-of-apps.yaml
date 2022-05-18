@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: dev
   source:
-    repoURL: https://github.com/DACHANCHOI/k8-cicd-argocd.git
+    repoURL: https://github.com/iamchoiz/k8-cicd-argocd.git
     targetRevision: HEAD
     path: app-of-apps
     helm:

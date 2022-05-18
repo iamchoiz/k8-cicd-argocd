@@ -20,8 +20,8 @@ spec:
         {{ toYaml $app.source.values }}
       {{- end }}
   syncPolicy:
-    # automated:
-    # prune: true
+    automated:
+      prune: true
     syncOptions:
       - Validate=false
       - CreateNamespace=true

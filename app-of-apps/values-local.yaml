@@ -5,13 +5,6 @@ apps:
     namespace: default
     source:
       path: demo
-  - name: kustomize_test
-    project: dev
-    namespace: default
-    source:
-      path: kustomize_app
-      kustomize:
-        namePrefix: test
   # - name: prometheus-operator
   #   project: dev
   #   namespace: prom

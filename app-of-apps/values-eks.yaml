@@ -5,11 +5,6 @@ apps:
     namespace: default
     source:
       path: kustomize_app
-  - name: demo
-    project: default
-    namespace: default
-    source:
-      path: demo
       # customValues: true
       # values:
       #   - values-eks.yaml

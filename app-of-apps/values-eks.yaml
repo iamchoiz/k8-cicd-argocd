@@ -1,7 +1,7 @@
 repoURL: 'https://github.com/iamchoiz/k8-cicd-argocd.git'
 apps:
   - name: kustomize_app
-    project: default
+    project: dev
     namespace: default
     source:
       path: kustomize_app

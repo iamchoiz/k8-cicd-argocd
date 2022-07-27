@@ -1,10 +1,10 @@
 repoURL: 'https://github.com/iamchoiz/k8-cicd-argocd.git'
 apps:
-  - name: demo
+  - name: kustomize_app
     project: dev
     namespace: default
     source:
-      path: demo
+      path: kustomize_app
   # - name: prometheus-operator
   #   project: dev
   #   namespace: prom

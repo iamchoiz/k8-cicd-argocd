@@ -1,13 +1,13 @@
 repoURL: 'https://github.com/iamchoiz/k8-cicd-argocd.git'
 apps:
-  - name: demo
+  - name: kustomize_app
     project: default
     namespace: default
     source:
-      path: demo
-      customValues: true
-      values:
-        - values-eks.yaml
+      path: kustomize_app
+      # customValues: true
+      # values:
+      #   - values-eks.yaml
   # - name: prometheus
   #   project: default
   #   namespace: prom

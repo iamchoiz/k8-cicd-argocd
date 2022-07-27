@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: default
     server: 'https://kubernetes.default.svc'
-  project: dev
+  project: default
   source:
     repoURL: https://github.com/iamchoiz/k8-cicd-argocd.git
     targetRevision: HEAD

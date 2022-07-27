@@ -15,11 +15,7 @@ apps:
   #   namespace: default
   #   source:
   #     path: sample-helm-1
-  # - name: sample-helm-2
-  #   project: default
-  #   namespace: default
-  #   source:
-  #     path: sample-helm-2
+
 
       # customValues: true
       # values:

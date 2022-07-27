@@ -5,6 +5,22 @@ apps:
     namespace: default
     source:
       path: kustomize_app
+  - name: demo
+    project: default
+    namespace: default
+    source:
+      path: demo
+  - name: sample-helm-1
+    project: default
+    namespace: default
+    source:
+      path: sample-helm-1
+  - name: sample-helm-2
+    project: default
+    namespace: default
+    source:
+      path: sample-helm-2
+
       # customValues: true
       # values:
       #   - values-eks.yaml

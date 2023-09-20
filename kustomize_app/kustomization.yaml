@@ -12,4 +12,4 @@ replicas:
 images:
 - name: nginxdemos/hello
   newName: nginx
-  newTag: "latest"
+  newTag: "1.25"

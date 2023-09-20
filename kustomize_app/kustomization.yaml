@@ -6,10 +6,10 @@ resources:
 
 replicas:
 - name: hello
-  count: 5
+  count: 1
 
 ## 이미지 변경 및 버전 수정
 images:
 - name: nginxdemos/hello
   newName: nginx
-  newTag: "1.25"
+  newTag: "latest"

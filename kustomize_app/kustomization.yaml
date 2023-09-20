@@ -6,7 +6,7 @@ resources:
 
 replicas:
 - name: hello
-  count: 1
+  count: 5
 
 ## 이미지 변경 및 버전 수정
 images:

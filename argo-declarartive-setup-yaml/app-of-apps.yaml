@@ -15,10 +15,4 @@ spec:
     helm:
       valueFiles:
         - values-eks.yaml
-  syncPolicy:
-    automated:
-      prune: false
-    syncOptions:
-      - Validate=false
-      - CreateNamespace=true
-      - PrunePropagationPolicy=background
+  syncPolicy: {}

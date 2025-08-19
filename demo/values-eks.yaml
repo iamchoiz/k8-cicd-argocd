@@ -1,4 +1,4 @@
-replicas: 10
+replicas: 1
 image:
   repository: 014842949473.dkr.ecr.ap-northeast-2.amazonaws.com/demo
   tag: 2.0.3

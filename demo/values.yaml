@@ -1,4 +1,4 @@
-replicas: 1
+replicas: 10
 image:
   repository: dachan1207/demo
   tag: nginx-blue

@@ -1,21 +1,18 @@
 repoURL: 'https://github.com/iamchoiz/k8-cicd-argocd.git'
 apps:
-  - name: kustomize-app
-    project: default
-    namespace: default
-    source:
-      path: kustomize_app
   - name: demo
     project: default
     namespace: default
     source:
       path: demo
-  - name: sample-helm-1
+      values:
+        - values.yaml
+        
+  - name: kustomize-app
     project: default
     namespace: default
     source:
-      path: sample-helm-1
-
+      path: kustomize_app
 
       # customValues: true
       # values:

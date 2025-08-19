@@ -17,7 +17,7 @@ spec:
         - values-eks.yaml
   syncPolicy:
     automated:
-      prune: true
+      prune: false
     syncOptions:
       - Validate=false
       - CreateNamespace=true

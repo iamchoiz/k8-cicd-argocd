@@ -1,14 +1,12 @@
 replicas: 1
 image:
-  repository: 454865828152.dkr.ecr.ap-northeast-2.amazonaws.com/demo
-  tag: 2.0.3
-  imagePullSecrets:
-    - name: ecr-cred
+  repository: dachan1207/demo
+  tag: nginx-green
 service:
   type: NodePort
   protocol: TCP
-  targetPort: 8080
-  port: 8080
+  targetPort: 80
+  port: 80
   nodePort: 30000
 ingress:
   enabled: false

@@ -1,7 +1,7 @@
 replicas: 1
 image:
   repository: dachan1207/demo
-  tag: nginx-blue2
+  tag: nginx-green
 service:
   type: NodePort
   protocol: TCP
